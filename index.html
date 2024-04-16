@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-1</title>
+    <style>
+        body {
+            background-color: #353232;
+            color: #fff;
+            text-align: center;
+        }
+
+        .txt {
+            width: 500px;
+            margin: auto;
+        }
+
+        p {
+            line-height: 30px;
+        }
+
+        img {
+            width: 200px;
+            cursor: pointer;
+
+        }
+        
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="txt">
+            <h1 id="title">Wanna Make a Deal?</h1>
+            <p id="description">There are three doors. Behind two doors there are BAD THINGS.Behind one door is an AWESOME THING.Choose a
+                door...</p>
+        </div>
+        <div class="door">
+
+            <span id="black" onclick="chooseBlack()">
+                <img class="black" src="./img/尺寸700x700/black(close).png" alt="">
+            </span>
+            <span id="brown" >
+                <img class="brown" src="./img/尺寸700x700/brown(close).png" alt="">
+            </span>
+            <span id="red" onclick="redFirst()">
+                <img class="red" src="./img/尺寸700x700/red.png" alt="">
+            </span>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
